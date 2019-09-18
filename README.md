@@ -15,14 +15,14 @@ A ce niveau, vous devrez avoir le programme `phpunit` dans le dossier `bin`
 de l’application, ainsi qu’un fichier de configuration à la racine
 de votre projet nommé : `phpunit.xml.dist`. Si ce n’est pas le cas, il faut le faire générer par la commande :
 
-	 bin/phpunit –generate-configuration 
+	 bin/phpunit --generate-configuration 
 	 => accepter les valeurs proposées par défaut
 
 ## Configurer PHPStorm suite à ces modifications (à faire aussi si vous télécharger le projet exemple). 
 ![conf phpstorm](https://raw.githubusercontent.com/ocapuozzo/sftu/master/public/confPHPStorm.png)
 
 
-## Application statup
+## Application startup
 
 Nous vous proposons une application `sftu` intégrant un test unitaire opérationnel.
 Avec git, installer l’application `sftu` à partir de votre racine des projets: 
@@ -39,3 +39,6 @@ dépôt distant, c’est le rôle du fichier `.gitignore` à la racine du projet
 Pour pouvez aussi passer directement par le terminal et lancer la commande (et obtenir le même résultat) :
 
 	php bin/phpunit tests/Utils/UtilHtmlTest.php
+	
+## La suite : TP	
+[Le support de cours et TP associés cours](https://raw.githubusercontent.com/ocapuozzo/sftu/master/public/TestUnitaireV2.png)  	
