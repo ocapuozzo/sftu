@@ -5,6 +5,7 @@ Projet bootstrap support pour initiation aux Tests Unitaires avec PHP et Symfony
 PHPUnit est un des nombreux dérivés du projet open source JUnit des auteurs Kent Beck et Erich Gamma.  Voici une procédure d’utilisation (à partir de la racine d’un projet symfony)
 1/ Installer PHPUnit da façon locale à votre projet actuel, en mode dev 
 
+	 composer update
 	 composer require --dev phpunit 
 
 Ensuite, suivant les recommandations de Symfony, installer le bridge :
@@ -18,8 +19,13 @@ de votre projet nommé : `phpunit.xml.dist`. Si ce n’est pas le cas, il faut 
 	 bin/phpunit --generate-configuration 
 	 => accepter les valeurs proposées par défaut
 
-## Configurer PHPStorm suite à ces modifications (à faire aussi si vous télécharger le projet exemple). 
-![conf phpstorm](https://raw.githubusercontent.com/ocapuozzo/sftu/master/public/confPHPStorm.png)
+## Configurer PHPStorm suite à ces modifications.
+ 
+![conf phpstorm](https://raw.githubusercontent.com/ocapuozzo/sftu/master/public/confPHPStormV2.png)
+
+Vérifier la configuration de PHP CLI dans PhpStorm :
+
+![conf phpstorm](https://raw.githubusercontent.com/ocapuozzo/sftu/master/public/setting-CLI-PHPStorm.png)
 
 
 ## Application startup
@@ -29,6 +35,7 @@ Avec git, installer l’application `sftu` à partir de votre racine des projets
 
 	 git clone https://github.com/ocapuozzo/sftu
 	 cd sftu
+	 composer update
 
 À partir de la racine du projet, faire un `composer update` afin de télécharger ses dépendances.
 En effet, il est inutile (même nuisible) d’intégrer des bibliothèques tierces sur un 
