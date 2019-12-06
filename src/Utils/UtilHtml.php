@@ -10,7 +10,12 @@ class UtilHtml
     if (!$tab){
       return '(vide)';
     } else {
-      return "<table><tr><td>A</td></tr><tr><td>B</td></tr><tr><td>C</td></tr></table>";
+      $res = "<table>";
+      for ($i = 0; $i < \count($tab); ++$i){
+        $res .= "<tr><td>" . $tab[$i] . "</td></tr>";
+      }
+      $res .= "</table>"; // $res = $res . "</table>";
+      return $res;
     }
   }
 
