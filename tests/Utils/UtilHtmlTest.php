@@ -11,11 +11,15 @@ class UtilHtmlTest extends TestCase
   public function testCasNormal()
   {
     $uh = new UtilHtml();
+
     $arg = ["A", "B", "C"];
-
     $expectedHtmlTab = '<table><tr><td>A</td></tr><tr><td>B</td></tr><tr><td>C</td></tr></table>';
-
     $this->assertEquals($expectedHtmlTab, $uh->toHtmlTab($arg, \count($arg)));
+
+    $arg = ["X", "B", "C"];
+    $expectedHtmlTab = '<table><tr><td>X</td></tr><tr><td>B</td></tr><tr><td>C</td></tr></table>';
+    $this->assertEquals($expectedHtmlTab, $uh->toHtmlTab($arg, \count($arg)));
+
   }
 
 
